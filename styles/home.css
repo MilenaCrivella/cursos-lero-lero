@@ -1,0 +1,21 @@
+html, body {
+    background-color: #333;
+}
+
+h1, p {
+    color: #fff;
+}
+
+#homeText, #instructors {
+    padding: 10vh 0;
+    /* height: 40vh; */
+}
+
+#about {
+    background-color: #f8f9fa;
+    height: 40vh;
+}
+
+footer{
+    background-color: #f8f9fa;
+}

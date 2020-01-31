@@ -2,7 +2,7 @@ html, body {
     background-color: #333;
 }
 
-h1, p {
+h1, #mainText {
     color: #fff;
 }
 

@@ -6,14 +6,12 @@ h1, #mainText {
     color: #fff;
 }
 
-#homeText, #instructors {
+#homeText, #instructors, #about {
     padding: 10vh 0;
-    /* height: 40vh; */
 }
 
 #about {
     background-color: #f8f9fa;
-    height: 40vh;
 }
 
 footer{

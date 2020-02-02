@@ -102,7 +102,7 @@ $(document).ready(function(){
         turma_instrutores_id: {required: true, minlength: 3, maxlength: 11},
         turma_cursos_id: {required: true, minlength: 3, maxlength: 10},
         turma_data_inicio: {required: false, dateITA: true},
-        turma_data_final: {required: false, dateITA: true},
+				turma_data_final: {required: false, dateITA: true, greaterThan: "#turma_data_inicio"},
         turma_carga_horaria: {required: false, minlength: 3, maxlength: 5},
       },
       messages: {
@@ -117,7 +117,8 @@ $(document).ready(function(){
         turma_cursos_id: {
           required: " Este campo é obrigatório",
           minlength: " O campo id do curso deve possuir no mínimo 3 caracteres",
-          maxlength: " O campo id do curso deve possuir no máximo 10 caracteres"},
+					maxlength: " O campo id do curso deve possuir no máximo 10 caracteres"},
+				
         turma_carga_horaria: {
           minlength: " O campo carga horária deve possuir no mínimo 3 caracteres",
           maxlength: " O campo carga horária deve possuir no máximo 5 caracteres"},
@@ -208,7 +209,16 @@ $(document).ready(function(){
           maxlength: " O campo cep deve possuir no máximo 9 caracteres"},
       }
     })
-  })
+	})
+	
+	jQuery.validator.addMethod("greaterThan", function(value, element, params) {
+		if (!/Invalid|NaN/.test(new Date(value))) {
+			return new Date(value) > new Date($(params).val());
+		}
+
+		return isNaN(value) && isNaN($(params).val()) 
+			|| (Number(value) > Number($(params).val())); 
+	},'Essa data deve ser maior que a data inicial!');
 
   jQuery.validator.addMethod("dateITA", function(value, element) {
     var check = false;
@@ -224,7 +234,7 @@ $(document).ready(function(){
       if (xdata.getFullYear() >= currentdata.getFullYear()-3) {
         check = false;
       }   
-      else if ( ( xdata.getFullYear() === aaaa ) && ( xdata.getMonth() === mm - 1 ) && ( xdata.getDate() === gg ) ){
+      else if ( ( xdata.getFullYear() === aaaa ) && ( xdata.getMonth() === mm - 1 ) && ( xdata.getDate() === gg )){
         check = true;
       } else {
         check = false;
@@ -233,7 +243,7 @@ $(document).ready(function(){
         check = false;
     }
     return this.optional(element) || check;
-  }, " Por favor, insira uma data no formato dd/mm/aaaa");
+  }, " Por favor, insira uma data válida no formato dd/mm/aaaa");
 
 	$("#btn-cursos").click(() => {
 		$("#formulario-cursos").show();

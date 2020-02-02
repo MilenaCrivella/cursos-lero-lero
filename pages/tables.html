@@ -15,59 +15,278 @@
 	<p></p>
 	<!-- Conteúdo aqui -->
     <!-- linha 1 -->
-    <h2>Cursos</h2>
-	  <form>
-		<div class="form-group row" id="tabela-cursos">
-			<label class="col-sm-2" for="nome">Nome</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="curso-nome">
-            </div>
-            <label class="col-sm-2" for="requisito">Requisito</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="curso-requisito">
-            </div>
-            <label class="col-sm-2" for="ementa">Ementa</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="curso-ementa">
-            </div>
-            <label class="col-sm-2" for="carga horária">Carga horária</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="curso-carga horária">
-            </div>
-            <label class="col-sm-2" for="preco">Preço</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="curso-preco">
-            </div>
-             <button type="submit" class="btn btn-primary">Enviar</button>
-		</div>
-      </form>
+    <!-- <h2>Cursos</h2>
+	  <form id="formulario-cursos">
+      <div class="form-group row" id="tabela-cursos">
+        <label class="col-sm-2" for="id">ID*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_id">
+        </div>
+        <label class="col-sm-2" for="nome">Nome*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_nome">
+        </div>
+        <label class="col-sm-2" for="requisito">Requisito</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_requisito">
+        </div>
+        <label class="col-sm-2" for="ementa">Ementa</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_ementa">
+        </div>
+        <label class="col-sm-2" for="carga_horaria">Carga horária</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_carga_horaria">
+        </div>
+        <label class="col-sm-2" for="preco">Preço</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="curso_preco">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form> -->
       
-      <!-- <h2>Instrutores</h2>
-	  <form>
-		<div class="form-group row" id="tabela-instrutores">
-			<label class="col-sm-2" for="nome">Nome</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="instrutores-nome">
-            </div>
-            <label class="col-sm-2" for="email">Email</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="curso-email">
-            </div>
-            <label class="col-sm-2" for="valor-hora">Valor-hora</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="curso-valor-hora">
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-		</div>
-      </form> -->
+    <!-- <h2>Instrutores</h2>
+	  <form id="formulario-instrutores">
+      <div class="form-group row" name="tabela-instrutores">
+        <label class="col-sm-2" for="id">ID*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_id">
+        </div>
+        <label class="col-sm-2" for="nome">Nome*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_nome">
+        </div>
+        <label class="col-sm-2" for="email">Email*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_email">
+        </div>
+        <label class="col-sm-2" for="valor-hora">Valor-hora</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_valor">
+        </div>
+        <label class="col-sm-2" for="login">Login*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_login">
+        </div>
+        <label class="col-sm-2" for="senha">Senha*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="instrutor_senha">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form> -->
+
+    <!-- <h2>Matrículas</h2>
+	  <form id="formulario-matriculas">
+      <div class="form-group row" name="tabela-matriculas">
+
+        <label class="col-sm-2" for="id">ID*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="matricula_id">
+        </div>
+        <label class="col-sm-2" for="turmas_id">ID da Turma*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="matricula_turmas_id">
+        </div>
+        <label class="col-sm-2" for="alunos_id">ID do Aluno*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="matricula_alunos_id">
+        </div>
+        <label class="col-sm-2" for="data_matricula">Data de Matrícula</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="matricula_data">
+        </div>
+        <label class="col-sm-2" for="nota">Nota</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="matricula_nota">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form> -->
+    
+    <h2>Matrículas</h2>
+	  <form id="formulario-turmas">
+      <div class="form-group row" name="tabela-turmas">
+
+        <label class="col-sm-2" for="id">ID*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_id">
+        </div>
+        <label class="col-sm-2" for="instrutores_id">ID do Instrutor*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_instrutores_id">
+        </div>
+        <label class="col-sm-2" for="cursos_id">ID do Curso*</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_cursos_id">
+        </div>
+        <label class="col-sm-2" for="data_inicio">Data de Início</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_data_inicio">
+        </div>
+        <label class="col-sm-2" for="data_final">Data final</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_data_final">
+        </div>
+        <label class="col-sm-2" for="carga_horaria">Carga horária</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="turma_carga_horaria">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
 
 	</div>
-    <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <!-- jQuery  -->
-    <script src="../scripts/jquery-3.4.1.min.js"></script> 
-	<script src="../scripts/jquery.validate.min.js"></script>
+    <script src="../jquery-3.4.1.min.js"></script> 
+	  <script src="../scripts/jquery.validate.min.js"></script>
     <script src="../popper.min.js"></script>
     <script src="../scripts/js/bootstrap.min.js"></script>
+    <script>
+      // $(document).ready(function(){
+      //   $("#formulario-cursos").validate({
+      //      rules: { 
+      //       curso_id: {required: true, minlength: 3, maxlength: 10},
+      //       curso_nome: { required: true, minlength: 3, maxlength: 50},
+      //       curso_requisito: { required: true, minlength: 3, maxlength: 255},
+      //       curso_ementa: { required: false, minlength: 3, maxlength: 255},
+      //       curso_carga_horaria: { required: false, minlength: 3, maxlength: 5},
+      //       curso_preco: { required: false, minlength: 3, maxlength: 10},          
+      //      },
+      //      messages: {
+      //       curso_id: { 
+      //        required: " Este campo é obrigatório",
+      //        minlength: " O campo id deve possuir no mínimo 3 números",
+      //        maxlength: " O campo id deve possuir no máximo 10 números"},
+      //      curso_nome: { 
+      //        required: " Este campo é obrigatório",
+      //        minlength: " O campo nome deve possuir no mínimo 3 letras",
+      //        maxlength: " O campo nome deve possuir no máximo 50 letras"},
+      //      curso_requisito: {
+      //        minlength: " O campo requisito deve possuir no mínimo 3 caracteres",
+      //        maxlength: " O campo requisito deve possuir no máximo 255 caracteres"},
+      //      curso_ementa: {
+      //        minlength: " O campo ementa deve possuir no mínimo 3 caracteres",
+      //        maxlength: " O campo ementa deve possuir no máximo 255 caracteres"},
+      //      curso_carga_horaria: {
+      //        minlength: " O campo carga horária deve possuir no mínimo 3 caracteres",
+      //        maxlength: " O campo carga horária possuir no máximo 5 caracteres"},
+      //      curso_preco: {
+      //        minlength: " O campo preço deve possuir no mínimo 3 números",
+      //        maxlength: " O campo preço deve possuir no máximo 10 números"},        
+      //      },
+      //   });
+      // });
+      // $(document).ready(function(){
+      //   $("#formulario-instrutores").validate({
+      //     rules: {
+      //       instrutor_id: {required: true, minlength: 3, maxlength: 11},
+      //       instrutor_nome: {required: true, minlength: 3, maxlength: 50},
+      //       instrutor_email: {required: true, minlength: 3, maxlength: 50},
+      //       instrutor_valor: {required: false, minlength: 3, maxlength: 10},
+      //       instrutor_login: {required: true, minlength: 3, maxlength: 20},
+      //       instrutor_senha: {required: true, minlength: 3, maxlength: 255},
+      //     },
+      //     messages: {
+      //       instrutor_id: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo id deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo id deve possuir no máximo 11 caracteres"},
+      //       instrutor_nome: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo nome deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo nome deve possuir no máximo 50 caracteres"},
+      //       instrutor_email: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo email deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo email deve possuir no máximo 50 caracteres"},
+      //       instrutor_valor: {
+      //         minlength: " O campo valor-hora deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo valor-hora deve possuir no máximo 10 caracteres"},
+      //       instrutor_login: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo login deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo login deve possuir no máximo 50 caracteres"},
+      //       instrutor_senha: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo senha deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo senha deve possuir no máximo 50 caracteres"},           
+      //       },
+      //   })
+      // })
+      // $(document).ready(function(){
+      //   $("#formulario-matriculas").validate({
+      //     rules: {
+      //       matricula_id: {required: true, minlength: 3, maxlength: 10},
+      //       matricula_turmas_id: {required: true, minlength: 3, maxlength: 10},
+      //       matricula_alunos_id: {required: true, minlength: 3, maxlength: 11},
+      //       matricula_data: {required: false},
+      //       matricula_nota: {required: false, minlength: 3, maxlength: 11},
+      //     },
+      //     messages: {
+      //       matricula_id: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo id deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo id deve possuir no máximo 10 caracteres"},
+      //       matricula_turmas_id: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo id da turma deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo id da turma deve possuir no máximo 10 caracteres"},
+      //       matricula_alunos_id: {
+      //         required: " Este campo é obrigatório",
+      //         minlength: " O campo id do aluno deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo id do aluno deve possuir no máximo 11 caracteres"},
+      //       matricula_data: {
+      //         //VALIDAÇÃO DATA
+      //       },
+      //       matricula_nota: {
+      //         minlength: " O campo nota deve possuir no mínimo 3 caracteres",
+      //         maxlength: " O campo nota deve possuir no máximo 11 caracteres"},
+      //     },
+      //   })
+      // })
+
+
+      $(document).ready(function(){
+        $("#formulario-turmas").validate({
+          rules: {
+            turma_id: {required: true, minlength: 3, maxlength: 10},
+            turma_instrutores_id: {required: true, minlength: 3, maxlength: 11},
+            turma_cursos_id: {required: true, minlength: 3, maxlength: 10},
+            turma_data_inicio: {required: false},
+            turma_data_final: {required: false},
+            turma_carga_horaria: {required: false, minlength: 3, maxlength: 5},
+          },
+          messages: {
+            turma_id: {
+              required: " Este campo é obrigatório",
+              minlength: " O campo id deve possuir no mínimo 3 caracteres",
+              maxlength: " O campo id deve possuir no máximo 10 caracteres"},
+            turma_instrutores_id: {
+              required: " Este campo é obrigatório",
+              minlength: " O campo id do instrutor deve possuir no mínimo 3 caracteres",
+              maxlength: " O campo id do instrutor deve possuir no máximo 50 caracteres"},
+            turma_cursos_id: {
+              required: " Este campo é obrigatório",
+              minlength: " O campo id do curso deve possuir no mínimo 3 caracteres",
+              maxlength: " O campo id do curso deve possuir no máximo 50 caracteres"},
+            turma_data_inicio: {
+              // VALIDAÇÃO DATA
+              },
+            turma_data_final: {
+              // VALIDAÇÃO DATA
+              },
+            turma_carga_horaria: {
+              minlength: " O campo carga horária deve possuir no mínimo 3 caracteres",
+              maxlength: " O campo carga horária deve possuir no máximo 50 caracteres"},
+          }
+        })
+      })
+
+
+
+
+    </script>
   </body>
 </html>

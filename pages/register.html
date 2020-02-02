@@ -15,10 +15,10 @@
 			</div>
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
-					<a class="nav-link" href="./../index.html">Inicio</a>
+					<a class="nav-link btn-light" href="./../index.html">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Login</a>
+					<a class="nav-link btn-light" href="./login.html">Login</a>
 				</li>
 			</ul>
 		</div>
@@ -48,24 +48,5 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="./../scripts/jquery.validate.min.js"></script>
 
-		<script>
-			$(document).ready(function(){
-				$("#formulario").validate({
-					 rules: { 
-						nome: { required: true, minlength: 5	},
-						email: { required: true, minlength: 5	},
-						senha: { required: true, minlength: 5	}
-					 },
-					 messages: {
-							nome: { required: "O campo nome é obrigatório",
-								minlength: " O nome de possuir no minimo 5 letras" },
-							email: { required: "O campo email é obrigatório",
-								minlength: " O nome de possuir no minimo 5 letras" },
-							senha: { required: "O campo senha é obrigatório",
-								minlength: " O nome de possuir no minimo 5 letras" }
-					 }
-				});
-			});
-		</script>
   </body>
 </html>
